@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daishy-ui@2.3.1/dist/daishy-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Check IP Address</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="du-text-center">IP Address Checker</h1>
+        <p class="du-text-center">Your IP Address:</p>
+        <div class="ip-address du-bg-light du-rounded du-text-center" id="ip-address">Loading...</div>
+        <button id="copy-button" class="du-button du-primary">Copy to Clipboard</button>
+    </div>
+
+    <!-- Modal for Copy Success -->
+    <div id="copy-success-modal" class="du-modal">
+        <div class="du-modal-content">
+            <span class="du-modal-close">&times;</span>
+            <p class="du-modal-message">IP Address copied to clipboard!</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/daishy-ui@2.3.1/dist/daishy-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
